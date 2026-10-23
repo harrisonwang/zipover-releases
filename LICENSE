@@ -1,0 +1,18 @@
+Copyright (c) 2026 Harrison Wang. All rights reserved.
+
+Zipover Desktop and its licensing service are proprietary software.
+A valid license grants its holder the right to use the purchased major version
+of Zipover Desktop on up to the number of devices specified in that license.
+That usage right is perpetual; device activation requires an Internet connection
+and must be renewed at least every 30 days. Renewal does not incur a subscription
+charge. A license does not include later major versions unless explicitly granted.
+
+Redistribution, modification, and use of proprietary source code require written
+permission from the copyright holder. This restriction does not apply to code
+covered by the third-party licenses accompanying the software, including the
+MIT-licensed Zipover core and previously MIT-licensed Zipover code.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE
+AND NONINFRINGEMENT. TO THE EXTENT PERMITTED BY LAW, THE AUTHORS ARE NOT LIABLE
+FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS USE.
