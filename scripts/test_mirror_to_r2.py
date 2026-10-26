@@ -145,7 +145,9 @@ class MirrorTests(unittest.TestCase):
 
     def test_public_downloads_are_hashed_and_urls_have_one_separator(self):
         hashes = mirror.verify_assets(self.directory, self.tag)
-        def open_asset(url, timeout):
+        def open_asset(request, timeout):
+            self.assertEqual(request.get_header("User-agent"), mirror.PUBLIC_USER_AGENT)
+            url = request.full_url
             self.assertTrue(url.startswith("https://downloads.example.com/desktop/releases/v1.0.0/"))
             self.assertEqual(timeout, 120)
             return io.BytesIO((self.directory / url.rsplit("/", 1)[1]).read_bytes())

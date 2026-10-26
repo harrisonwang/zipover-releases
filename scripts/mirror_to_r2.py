@@ -11,7 +11,7 @@ import re
 import subprocess
 import tempfile
 from urllib.parse import quote, urlsplit
-from urllib.request import urlopen
+from urllib.request import Request, urlopen
 
 import boto3
 from botocore.config import Config
@@ -27,6 +27,7 @@ TARGETS = {
 CHECKSUMS = "SHA256SUMS.txt"
 PREFIX = "desktop/releases"
 CACHE_CONTROL = "public, max-age=31536000, immutable"
+PUBLIC_USER_AGENT = "Zipover-Release-Verifier/1.0 (+https://github.com/harrisonwang/zipover-releases)"
 
 
 def validate_tag(tag):
@@ -162,7 +163,9 @@ def verify_public(base, tag, hashes):
     base = public_base(base)
     for name, expected_hash in sorted(hashes.items()):
         url = f"{base}/{PREFIX}/{tag}/{name}"
-        with urlopen(url, timeout=120) as response:
+        # Identify this verifier explicitly; Cloudflare rejects generic Python-urllib clients.
+        request = Request(url, headers={"User-Agent": PUBLIC_USER_AGENT})
+        with urlopen(request, timeout=120) as response:
             if hash_stream(response).hex() != expected_hash:
                 raise ValueError(f"Public download checksum mismatch: {name}")
     return f"{base}/{PREFIX}/{tag}/"
