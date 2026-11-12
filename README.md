@@ -7,13 +7,13 @@ Copy text, images, files and folders between your computers over an encrypted lo
 - [Issues and feedback](https://github.com/harrisonwang/zipover-releases/issues)
 - [Free and open-source CLI](https://github.com/harrisonwang/zipover)
 
-Desktop offers a 30-day offline trial, starting when you explicitly choose “开始 30 天免费试用” in the app. No account, payment details or license key are needed for the trial. Expiry pauses synchronization and retains pairings. Purchases are not open yet.
+Zipover Desktop is commercial software supporting English and Simplified Chinese. Each computer gets a 30-day offline trial starting when you explicitly start the trial in the app—no account, payment details or license key required. Expiry pauses synchronization and retains pairings. A one-time purchase ([zipover.app](https://zipover.app/#purchase)) activates up to 5 computers and includes permanent use of the purchased major version plus updates within that major version.
 
-The website identifies the current release and explains supported architectures and first-launch requirements. Release candidates are marked as prereleases. The stable [1.0.0 release](https://github.com/harrisonwang/zipover-releases/releases/tag/v1.0.0) is available. Current macOS packages are ad-hoc signed without Apple notarization, and Windows packages are unsigned.
+The website identifies the current release and explains supported architectures and first-launch requirements. Stable builds are published on the [releases page](https://github.com/harrisonwang/zipover-releases/releases/latest), and release candidates are marked as prereleases. Current macOS packages are ad-hoc signed without Apple notarization, and Windows packages are unsigned.
 
 Each release includes its applicable `LICENSE`, third-party notices and `SHA256SUMS.txt`. Use the license shipped with the downloaded version. Keep private license keys and sensitive clipboard contents out of public issues.
 
-This repository distributes Desktop binaries and receives feedback. Desktop source is maintained separately; CLI/core source remains public.
+This repository distributes Desktop binaries and receives feedback. Desktop source is maintained separately; the CLI and core remain free and open source under the [MIT license](https://github.com/harrisonwang/zipover).
 
 ## R2 download mirror
 
