@@ -9,9 +9,13 @@ Continued use after the trial requires a valid license.
 
 A valid license grants its holder the right to use the purchased major version
 of Zipover Desktop on up to the number of devices specified in that license.
-That usage right is perpetual. An Internet connection is required only to
-activate or deactivate a device. Once activated, the purchased major version
-can be used offline without periodic license checks or renewal fees.
+That usage right is perpetual for the purchased major version, with no renewal
+fees. An Internet connection is required to activate or deactivate a device.
+Once activated, the purchased major version can be used offline; when online,
+the application may periodically check whether the license or device activation
+has been revoked or deactivated. Failed network checks do not interrupt offline
+use, and synchronization pauses only upon a valid signed revocation or
+deactivation response.
 
 Redistribution, modification, and use of proprietary source code require written
 permission from the copyright holder. This restriction does not apply to code
